@@ -1,14 +1,20 @@
 const express = require("express");
-const app = express();
+
+const cors=require('cors');
 const dotenv = require("dotenv");
 dotenv.config();
-const port = 6700;
+const port = process.env.PORT;
 const multer = require("multer");
 const pdfParse = require("pdf-parse");
 const fs = require("fs");
 const { GoogleGenAI } = require("@google/genai");
 const  {QdrantClient} = require('@qdrant/js-client-rest');
 const upload = multer({ dest: "uploads/" });
+
+const app = express();
+
+app.use(cors());
+
 
 app.use(express.json());
 
