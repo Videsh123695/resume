@@ -13,7 +13,13 @@ const upload = multer({ dest: "uploads/" });
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://resume-optimize0.netlify.app/",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 
 app.use(express.json());
