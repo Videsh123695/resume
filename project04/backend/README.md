@@ -207,7 +207,7 @@ backend/
 ## 1. Clone the repository
 
 ```bash
-git clone <your-github-repository-url>
+git clone https://github.com/Videsh123695/resume.git
 ```
 
 Move into the project directory:
