@@ -6,6 +6,7 @@ An AI-powered full-stack application that analyzes a resume against a Job Descri
 > This project is part of my hands-on learning journey in Generative AI, RAG, vector databases, LLM evaluation, and benchmarking.
 
 ---
+LIVE LINK :  https://resume-optimize0.netlify.app/
 
 ## 📌 Overview
 
